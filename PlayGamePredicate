@@ -1,0 +1,6 @@
+% Playing Games in prolog simple example
+plays(ali,cricket).
+plays(ali,hockey).
+plays(ahmed,hockey).
+plays(rohan,badminton).
+plays(rohan,cricket).
