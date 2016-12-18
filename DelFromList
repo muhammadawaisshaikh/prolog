@@ -1,0 +1,4 @@
+del(X,[X|Tail],Tail).
+
+del(X,[Head|Tail],[Head|NewList]):-
+	del(X,Tail,NewList).
