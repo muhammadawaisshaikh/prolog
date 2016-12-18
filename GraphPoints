@@ -1,0 +1,15 @@
+% adding points in your knowledge based
+
+point(1,6).
+point(1,1).
+
+point(2,3).
+point(8,3).
+
+% horizental Line - start point vary, end point same of cordinates
+
+horizental(point(_,X),point(_,X)).
+
+% vertical Line - start point same, end point differ of cordinates
+
+vertical(point(X,_),point(X,_)).
