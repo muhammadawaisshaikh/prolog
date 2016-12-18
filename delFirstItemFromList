@@ -1,0 +1,3 @@
+delFrstItem([],[],L3). %practice delete frm list
+delFrstItem([X|L1],[Y|L2],L3):-
+	delFrstItem(L1,L2,L3).
