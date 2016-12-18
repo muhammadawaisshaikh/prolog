@@ -1,0 +1,14 @@
+% grand parent strategy
+% ali is parent of mubashir, nadia is parent of ali,
+% that shows nadia is grand parent of mubashir.
+
+parent(ali, mubashir).
+parent(nadia, ali).
+
+parent(shomaila, mubashir).
+parent(sumiya, shomaila).
+
+% ali=X, mubashir=Y, nadia=Z
+
+grand(Z,Y):-
+	parent(X,Y),parent(Z,X).
