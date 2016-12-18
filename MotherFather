@@ -1,0 +1,24 @@
+% mother
+
+parent(shumaila,mubashir).
+parent(sumiya,ali).
+
+parent(afaque,ali).
+parent(shoaib,mubashir).
+
+%shumaila is mother is mubashir if and only if
+%shumaila is parent of mubashir & shumaila is female
+
+female(shumaila).
+female(sumiya).
+
+male(afaque).
+male(shoaib).
+
+%writing mother father identifier predicate
+
+mother(X,Y):-
+	parent(X,Y),female(X).
+
+father(X,Y):-
+	parent(X,Y),male(X).
